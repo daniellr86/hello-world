@@ -8,10 +8,10 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class HolaMundo extends Application{
+public class HolaMundo {
 
-	@Override
-	public void start(Stage primaryStage) throws Exception {
+	
+	public void inicio(Stage primaryStage) throws Exception {
 		Button btn = new Button();
 		btn.setText("Di 'Hola mundo'");
 		btn.setOnAction(new EventHandler<ActionEvent>() {
@@ -30,13 +30,13 @@ public class HolaMundo extends Application{
 		
 		primaryStage.setTitle("Hola mundo");
 		primaryStage.setScene(scene);
-		primaryStage.show();
+		//primaryStage.show();
 		
 	}
 	
-	public static void main (String[] args) {
-		launch(args);
-	}
+//	public static void main (String[] args) {
+//		launch(args);
+//	}
 	
 
 }
